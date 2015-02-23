@@ -1,6 +1,6 @@
 /*
  * Nathan Samano
- * October 30, 2013 (Sophmore Year)
+ * October 30, 2013 (Sophomore Year)
  * Project 2: Perform calculations using the postfix method of evaluating expressions 
  * aka Reverse Polish Notation Calculator
  */
