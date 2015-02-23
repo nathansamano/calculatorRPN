@@ -1,4 +1,4 @@
 # calculatorRPN
 [CMP211] Java Postfix Calculator
 
-Enter postfix expression for evaluation.  Type exit to end prompt.
+Run CalcDriver.java. Enter postfix expression for evaluation.  Type exit to end prompt.
