@@ -1,18 +1,19 @@
 /*
  * Nathan Samano
- * October 30, 2013
- * Project 2: Perform calculations using the postfix method of evaluating expressions aka Reverse Polish Notation Calculator
+ * October 30, 2013 (Sophmore Year)
+ * Project 2: Perform calculations using the postfix method of evaluating expressions 
+ * aka Reverse Polish Notation Calculator
  */
 public class Calculation {
 
-	public static final int SIZE = 50;				// maximum characters
-	public static final boolean DEBUG = false;		// used for debugging purposes
+	public static final int SIZE = 50;		// maximum characters
+	public static final boolean DEBUG = false;	// used for debugging purposes
 	
-	Stack expression = new Stack(SIZE);				// take user input and use with a stack
+	Stack expression = new Stack(SIZE);		// take user input and use with a stack
 	
-	private double pop1;			// popped value
-	private double pop2;			// popped value
-	private double pushChar;		// character that will be pushed onto stack
+	private double pop1;		// popped value
+	private double pop2;		// popped value
+	private double pushChar;	// character that will be pushed onto stack
 	private Boolean valid;      	// state whether or not input is valid
 	
 	public Calculation() { // zero arg constructor initialization
@@ -27,7 +28,9 @@ public class Calculation {
 			char[] charArray = userString.toCharArray();  // convert userInput string to charArray of individual characters
 			String temp = new String();  // create temporary string to store characters
 			for (int i=0; i < userString.length(); i++) { // numbers ' ', operators
-				if ((charArray[i] >= '0' && charArray[i] <= '9') || charArray[i]== ' ' || charArray[i] == '+' || charArray[i] == '-' || charArray[i] == '*' || charArray[i] == '/') { // put integer in temp
+				if ((charArray[i] >= '0' && charArray[i] <= '9') || charArray[i]== ' ' || 
+				     charArray[i] == '+' || charArray[i] == '-' || charArray[i] == '*' || 
+				     charArray[i] == '/') { // put integer in temp
 					temp = temp + charArray[i];
 					valid = true;
 				}
@@ -49,7 +52,7 @@ public class Calculation {
 					if (charArray[i] >= '0' && charArray[i] <= '9') { // if number
 						pushChar = charArray[i] - '0';  // convert char to int
 						try {
-							expression.Push(pushChar);		// Push number onto stack
+							expression.Push(pushChar);	// Push number onto stack
 						} catch (Exception e) {
 							valid = false;
 							break;
