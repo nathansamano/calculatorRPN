@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 /*
  * Nathan Samano
- * October 30, 2013 (Sophmore Year)
+ * October 30, 2013 (Sophomore Year)
  * Project 2: Driver class for Calculation.java
  */
 public class CalcDriver {
