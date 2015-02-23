@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 /*
  * Nathan Samano
- * October 30, 2013
+ * October 30, 2013 (Sophmore Year)
  * Project 2: Driver class for Calculation.java
  */
 public class CalcDriver {
@@ -13,7 +13,7 @@ public class CalcDriver {
 			if (userInput.equals("exit")) { // exit
 				System.exit(0);
 			}
-			Calculation expression = new Calculation(userInput);		// use user string and make a calculation with it
+			Calculation expression = new Calculation(userInput);	// use user string and make a calculation with it
 		
 			JOptionPane.showMessageDialog(null, expression, "Answer", JOptionPane.INFORMATION_MESSAGE, null);
 		}
